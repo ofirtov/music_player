@@ -1,0 +1,38 @@
+Object assignment 
+$songArray = [];
+        $dbId;
+        foreach($music_list as $key => $songName) {
+            /*
+            $songArray[] = (object) array(
+                'dbId' => $music_list[$key]->id, // Database id
+                'id' => $key, // Array id
+                'songName' => $songName
+            );
+            */
+            $dbId = $music_list[$key]->id;
+            //$songArray[] = new SongObj($dbId, $songName, $key);
+            $songArray[] = (object)array('dbId' =>$dbId, 'songName' => $songName, 'id' => $key);
+        } 
+
+
+
+        Now playing controller staff
+        //$song = $music_list[$id]->song;
+        //$url = route('player');
+        //$song = PostMusic::where('id', '=', $id);
+        //$songId = $song->id;
+        //$name = PostMusic::where('song', '=', $name);
+        // return a view and send the gallery data to the view
+        //$currentPath = Route::getFacadeRoot()->current()->uri();
+        //$url = $request->url();
+        //$cUrl = ltrim($url, 'http://localhost:8000/');
+        //$cleanUrl = str_replace('http://localhost:8000/', "",$url);
+        //$cleanUrl = str_replace('-', '_', $cUrl);
+        //$url = pathinfo($request->url());
+        //$url = requestUrl($request->url());
+        //$route = Route::current();
+        //$songPath = "storage/myMusic/$id/$name";
+        //return view('player')->with(['music_list' => $music_list, 'defaultSong' => $defaultSong, 'id' => $id, 'chosenSong' => $chosenSong, 'song' => $songNameDb,  'currentPath' => $cleanUrl]);
+        //return redirect('player/{id}/{name}', ['id' => $id, 'name' => $name])->with(['music_list' => $music_list, 'defaultSong' => $defaultSong]);
+        //return redirect()->route('player/now_playing/{songNameDb}/{chosenSong}')->with(['music_list' => $music_list, 'id' => $id, 'chosenSong' => $chosenSong, 'song' => $songNameDb, 'defaultSong' => $defaultSong, 'currentPath' => ""]);
+        

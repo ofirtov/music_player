@@ -1,0 +1,13 @@
+.container-fluid {
+    background: #000;
+    color: aliceblue;
+}
+
+.container1 {
+    margin-left: 50px;
+    padding: 50;
+}
+
+strong {
+    color: darkorange;
+}

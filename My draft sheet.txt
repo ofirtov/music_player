@@ -1,0 +1,4 @@
+Player blade line 27:
+<li><a href="{{$song->music_file}}">{{$song->id.". ".$song->song}}</a></li>
+
+<li><a href="<?php echo asset("storage/myMusic").'/'.$music_list[19]->song ?>">{{$song->id.". ".$song->song}}</a></li>
