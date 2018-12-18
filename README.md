@@ -1,5 +1,5 @@
 # music_player
-A single page application using entirely with Laravel framework and MySql using Eloquent ORM.
+A single page application built entirely with Laravel framework and MySql using Eloquent ORM.
 You can upload your songs and they will be stored locally (under public/storage/myMusic)
 and a link will be added to your DB.
 
