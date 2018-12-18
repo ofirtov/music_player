@@ -1,0 +1,1 @@
+<footer>All rights reserved to Shinyweb &copy</footer>
